@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+#Allow repo secrets
+env:
+  VITE_CLERK_PUBLISHABLE_KEY: ${{secrets.VITE_CLERK_PUBLISHABLE_KEY}}
+
 jobs:
   build:
     name: Build
